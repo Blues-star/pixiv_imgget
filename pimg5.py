@@ -41,8 +41,8 @@ class Pixiv():
         }
         '''
         self.qhead = "https://www.pixiv.net/member_illust.php?mode=medium&illust_id="
-        self.pixiv_id = '469830014@qq.com'
-        self.password = 'ztm20001003'
+        self.pixiv_id = ''
+        self.password = ''
         self.post_key = []
         self.return_to = 'http://www.pixiv.net/'
         self.load_path = 'D:\psdcode\Python\pixiv_pic'
