@@ -5,7 +5,7 @@
 使用方法如下
 ```python
 youpix = Pixiv()
-youpix.login()
+youpix.login("yourmail","yourpwd")
 picID = "你想要的图片的ID"
 youpix.download(picID)
 ```

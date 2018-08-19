@@ -50,7 +50,12 @@ class Pixiv():
         self.lastgoal = ""
         self.lastPicID = 0
 
-    def login(self):
+    def login(self,useremail,password):
+        '''
+            参数说明:usermail与password都为字符串类型
+        '''
+        self.pixiv_id = useremail
+        self.password = password
         post_key_html = se.get(self.base_url, headers=self.headers).text
         post_key_soup = BeautifulSoup(post_key_html, 'lxml')
         self.post_key = post_key_soup.find('input')['value']
